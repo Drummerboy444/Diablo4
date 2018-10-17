@@ -1,1 +1,1 @@
-walkSpeed = 5;
+walkSpeed = 8;
