@@ -5,13 +5,13 @@
     "name": "destination",
     "eventList": [
         {
-            "id": "d4be4486-4684-4ddd-ae71-d649b343a9cc",
+            "id": "1c19cd23-eead-4da3-811e-e389601da72c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 72,
-            "eventtype": 8,
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "367a11ff-4d78-4b11-b467-66dab1c94e52"
         }
     ],
