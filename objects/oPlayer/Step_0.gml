@@ -9,3 +9,4 @@ if(point_distance(x,y,destination.x,destination.y)<=walkSpeed){
 else{
 	speed = walkSpeed;
 }
+// Comment from Nick
