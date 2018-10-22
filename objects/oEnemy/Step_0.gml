@@ -2,10 +2,10 @@ if (distance_to_point(oPlayer.x, oPlayer.y) < agroRange) {
 	angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 	xSpeed = lengthdir_x(walkSpeed, angle);
 	ySpeed = lengthdir_y(walkSpeed, angle);
-	if (place_meeting(x + xSpeed, y, oEnemy)) {
+	if (place_meeting(x + xSpeed, y, oEnemy) || place_meeting(x + xSpeed, y, oPlayer)) {
 		xSpeed = 0;
 	}
-	if (place_meeting(x, y + ySpeed, oEnemy)) {
+	if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer)) {
 		ySpeed = 0;
 	}
 	x += xSpeed;
