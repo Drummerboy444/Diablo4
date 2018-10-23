@@ -4,15 +4,35 @@ ySpeed = lengthdir_y(walkSpeed, angle);
 
 // Collision detection with enemies
 if (place_meeting(x + xSpeed, y, oEnemy)) {
-	xSpeed = 0;
+
+	// Set up to account for +ve and -ve xSpeed
+	xIndex = floor(abs(xSpeed));
+	signXSpeed = sign(xSpeed);
+	for (var i = xIndex; i >= 0; i--) {
+		if (!(place_meeting(x + (i * signXSpeed), y, oEnemy))) {
+			xSpeed = i * signXSpeed;
+			break;
+		}
+		xSpeed = 0;
+	}
 }
 if (place_meeting(x, y + ySpeed, oEnemy)) {
-	ySpeed = 0;
+
+	// Set up to account for +ve and -ve ySpeed
+	yIndex = floor(abs(ySpeed));
+	signYSpeed = sign(ySpeed);
+	for (var i = yIndex; i >= 0; i--) {
+		if (!(place_meeting(x, y + (i * signYSpeed), oEnemy))) {
+			ySpeed = i * signYSpeed;
+			break;
+		}
+		ySpeed = 0;
+	}
 }
 
 // Movement
 // Moves the player to the destination if it's close enough
-if(point_distance(x,y,destination.x,destination.y)<=walkSpeed){
+if(point_distance(x,y,destination.x,destination.y) <= walkSpeed){
 	if (xSpeed > 0) {
 		x = destination.x;
 	}
