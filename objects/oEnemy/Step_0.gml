@@ -1,4 +1,4 @@
-//if (distance_to_point(oPlayer.x, oPlayer.y) < agroRange) {
+if (distance_to_point(oPlayer.x, oPlayer.y) < agroRange) {
 	angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 	xSpeed = lengthdir_x(walkSpeed, angle);
 	ySpeed = lengthdir_y(walkSpeed, angle);
@@ -40,4 +40,4 @@
 	else if (45 < angle && angle <= 135) image_index = 1;
 	else if (135 < angle && angle <= 225) image_index = 2;
 	else if (225 < angle && angle <= 315) image_index = 3;
-//}
+}
