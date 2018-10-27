@@ -50,7 +50,7 @@
             "Key": "08267e72-6202-40a9-b9e9-e00695594617",
             "Value": {
                 "id": "e42c5f4d-bb23-4461-9172-122c191575b0",
-                "resourcePath": "sprites\\sAbilityArea\\sAbilityArea.yy",
+                "resourcePath": "sprites\\sAoe\\sAoe.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -66,7 +66,7 @@
             "Key": "177be9a6-4f39-403e-9b95-d210f531bf4c",
             "Value": {
                 "id": "cd1369c0-7b4a-435a-b94f-8c7791129f96",
-                "resourcePath": "sprites\\sArrow\\sArrow.yy",
+                "resourcePath": "sprites\\sFireball\\sFireball.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -130,7 +130,7 @@
             "Key": "55b6dc61-2d8c-4f22-b196-a6a764c0c2f5",
             "Value": {
                 "id": "ca19d360-cb3c-4624-b3b2-667e40444b2e",
-                "resourcePath": "objects\\oAbility\\oAbility.yy",
+                "resourcePath": "objects\\oAoe\\oAoe.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -242,7 +242,7 @@
             "Key": "dfea432a-ccac-4a03-93db-fbf6d360c180",
             "Value": {
                 "id": "199f4cbd-f01a-45a9-bf5c-ac913d98cdd4",
-                "resourcePath": "objects\\oArrow\\oArrow.yy",
+                "resourcePath": "objects\\oFireball\\oFireball.yy",
                 "resourceType": "GMObject"
             }
         },

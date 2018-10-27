@@ -1,2 +1,2 @@
-cooldown_1 = max(0,cooldown_1-1);
-cooldown_2 = max(0,cooldown_2-1);
+cooldown_aoe = max(0,cooldown_aoe-1);
+cooldown_fireball = max(0,cooldown_fireball-1);

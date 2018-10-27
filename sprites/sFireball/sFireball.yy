@@ -2,7 +2,7 @@
     "id": "177be9a6-4f39-403e-9b95-d210f531bf4c",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sArrow",
+    "name": "sFireball",
     "For3D": false,
     "HTile": false,
     "VTile": false,
