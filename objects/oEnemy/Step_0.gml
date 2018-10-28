@@ -1,8 +1,10 @@
 if (distance_to_point(oPlayer.x, oPlayer.y) < agroRange) {
 	angle = point_direction(x, y, oPlayer.x, oPlayer.y);
+	chasing_player = true;
 }
 else{
 	angle = point_direction(x, y, initial_x, initial_y);
+	chasing_player = false;
 }
 xSpeed = lengthdir_x(walkSpeed, angle);
 ySpeed = lengthdir_y(walkSpeed, angle);
@@ -33,6 +35,14 @@ if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer
 		}
 		ySpeed = 0;
 	}
+}
+
+// Snap to home area
+if(distance_to_point(initial_x, initial_y) < walkSpeed and chasing_player==false){
+	x = initial_x;
+	y = initial_y;
+	xSpeed = 0;
+	ySpeed = 0;
 }
 
 // Movement
