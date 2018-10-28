@@ -2,7 +2,7 @@
     "id": "08267e72-6202-40a9-b9e9-e00695594617",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sAbilityArea",
+    "name": "sAoe",
     "For3D": false,
     "HTile": false,
     "VTile": false,
