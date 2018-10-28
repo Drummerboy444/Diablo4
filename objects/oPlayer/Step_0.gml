@@ -1,4 +1,4 @@
-angle = point_direction(x, y, destination.x, destination.y);
+angle = point_direction(x, y, oDestination.x, oDestination.y);
 xSpeed = lengthdir_x(walkSpeed, angle);
 ySpeed = lengthdir_y(walkSpeed, angle);
 
@@ -32,7 +32,7 @@ if (place_meeting(x, y + ySpeed, oEnemy)) {
 
 // Movement
 // Moves the player to the destination if it's close enough
-remaining_dist = point_distance(x,y,destination.x,destination.y);
+remaining_dist = point_distance(x,y,oDestination.x,oDestination.y);
 if(remaining_dist <= walkSpeed*10){
 	xSpeed = xSpeed * remaining_dist / (walkSpeed*10);
 	ySpeed = ySpeed * remaining_dist / (walkSpeed*10);
@@ -41,7 +41,7 @@ x += xSpeed;
 y += ySpeed;
 
 // Change the sprite to face the direction of movement if the player is trying to move
-if (point_distance(x, y, destination.x, destination.y) > 0) {
+if (point_distance(x, y, oDestination.x, oDestination.y) > 0) {
 	if (315 < angle || angle <= 45) image_index = 0;
 	else if (45 < angle && angle <= 135) image_index = 1;
 	else if (135 < angle && angle <= 225) image_index = 2;
