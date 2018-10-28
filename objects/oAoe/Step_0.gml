@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 x = sPlayer.x;
 y = sPlayer.y;
 lifetime -= 1;

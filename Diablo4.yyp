@@ -50,7 +50,7 @@
             "Key": "08267e72-6202-40a9-b9e9-e00695594617",
             "Value": {
                 "id": "e42c5f4d-bb23-4461-9172-122c191575b0",
-                "resourcePath": "sprites\\sAbilityArea\\sAbilityArea.yy",
+                "resourcePath": "sprites\\sAoe\\sAoe.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -60,6 +60,14 @@
                 "id": "6e68a914-ad93-4064-b818-b7d84015623c",
                 "resourcePath": "views\\163e9bd9-cb35-4308-a48a-27d7d0e3ee14.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "177be9a6-4f39-403e-9b95-d210f531bf4c",
+            "Value": {
+                "id": "cd1369c0-7b4a-435a-b94f-8c7791129f96",
+                "resourcePath": "sprites\\sFireball\\sFireball.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -130,7 +138,7 @@
             "Key": "55b6dc61-2d8c-4f22-b196-a6a764c0c2f5",
             "Value": {
                 "id": "ca19d360-cb3c-4624-b3b2-667e40444b2e",
-                "resourcePath": "objects\\oAbility\\oAbility.yy",
+                "resourcePath": "objects\\oAoe\\oAoe.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -186,7 +194,7 @@
             "Key": "a0f9dc7d-df8c-4718-a960-55cbe40e1129",
             "Value": {
                 "id": "cd971651-9d13-4ab2-a6ab-e035b0cc5ea5",
-                "resourcePath": "sprites\\sprite2\\sprite2.yy",
+                "resourcePath": "sprites\\sEnemy\\sEnemy.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -236,6 +244,14 @@
                 "id": "e946e005-4e27-467b-a7b4-a4fda411bc60",
                 "resourcePath": "views\\d1fb9fc1-59fc-4a86-98ed-869852ffbd55.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dfea432a-ccac-4a03-93db-fbf6d360c180",
+            "Value": {
+                "id": "199f4cbd-f01a-45a9-bf5c-ac913d98cdd4",
+                "resourcePath": "objects\\oFireball\\oFireball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
