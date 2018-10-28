@@ -37,12 +37,13 @@ if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer
 	}
 }
 
-// Snap to home area
-if(distance_to_point(initial_x, initial_y) < walkSpeed and chasing_player==false){
+// Snap to initial position
+if(distance_to_point(initial_x, initial_y) < walkSpeed/2 and chasing_player==false){
 	x = initial_x;
 	y = initial_y;
 	xSpeed = 0;
 	ySpeed = 0;
+	image_index = 3;
 }
 
 // Movement
@@ -50,7 +51,9 @@ x += xSpeed;
 y += ySpeed;
 
 // Change the sprite to face the direction of movement
-if (315 < angle || angle <= 45) image_index = 0;
-else if (45 < angle && angle <= 135) image_index = 1;
-else if (135 < angle && angle <= 225) image_index = 2;
-else if (225 < angle && angle <= 315) image_index = 3;
+if (xSpeed !=0 or ySpeed !=0){
+	if (315 < angle || angle <= 45) image_index = 0;
+	else if (45 < angle && angle <= 135) image_index = 1;
+	else if (135 < angle && angle <= 225) image_index = 2;
+	else if (225 < angle && angle <= 315) image_index = 3;
+}
