@@ -71,7 +71,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Abilites",
+            "name": "Abilities",
             "id": "4d6b0e2b-5897-497e-8dcd-0e93250af958",
             "depth": 200,
             "grid_x": 32,
