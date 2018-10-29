@@ -2,7 +2,7 @@
     "id": "367a11ff-4d78-4b11-b467-66dab1c94e52",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "destination",
+    "name": "oDestination",
     "eventList": [
         {
             "id": "1c19cd23-eead-4da3-811e-e389601da72c",
@@ -15,7 +15,7 @@
             "m_owner": "367a11ff-4d78-4b11-b467-66dab1c94e52"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "e5e1eb15-c76e-4c36-9eb7-c4cfd9c5bf2d",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
