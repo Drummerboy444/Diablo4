@@ -39,7 +39,7 @@ if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer
 
 // Snap to initial position
 if(distance_to_point(initial_x, initial_y) < walkSpeed/2 and chasing_player==false){
-	if(!place_meeting(initial_x,initial_y,oPlayer) && place_meeting(initial_x,initial_y,oEnemy)){
+	if(!place_meeting(initial_x,initial_y,oPlayer) && !place_meeting(initial_x,initial_y,oEnemy)){
 		x = initial_x;
 		y = initial_y;
 	}
