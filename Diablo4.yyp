@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "2948f42a-9a04-46a4-b9e8-b5e7471bffa8",
-            "Value": {
-                "id": "9da82063-4722-408b-aa41-2756766c60a6",
-                "resourcePath": "sprites\\sBackground\\sBackground.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3184aec2-3b36-4fc1-916b-5f9c8cd02887",
             "Value": {
                 "id": "9042d785-d7b1-415e-9b9f-0b115640dc31",
@@ -132,6 +124,14 @@
                 "id": "873a52d8-83a0-41ec-9dd1-5b0cd6621fff",
                 "resourcePath": "views\\4f48b4b2-6def-41ae-8df6-6290911a6c3d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5022a8a0-0364-4289-a493-79bc858b7726",
+            "Value": {
+                "id": "33312316-34ba-4e99-a84c-036f04f80abd",
+                "resourcePath": "sprites\\sBackground_grass_green\\sBackground_grass_green.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -300,6 +300,14 @@
                 "id": "5a31896a-0f72-436c-8510-a7393522cdb6",
                 "resourcePath": "views\\f91bc36e-7269-4da7-afa1-5d3e03680904.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fa5c811e-f02f-4c66-ba98-4cabffe4c37f",
+            "Value": {
+                "id": "a4df394c-4a40-43c7-918c-865576bf7baf",
+                "resourcePath": "sprites\\sBackground_grass_dry\\sBackground_grass_dry.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
