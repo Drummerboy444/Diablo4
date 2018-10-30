@@ -30,9 +30,11 @@ if (place_meeting(x, y + ySpeed, oEnemy)) {
 	}
 }
 
-// Collision detection with the player and walls xSpeed
-if (place_meeting(x + xSpeed, y, oDirtWall) || place_meeting(x, y + ySpeed, oDirtWall)) {
+// Collision detection with the player and walls
+if (place_meeting(x + xSpeed, y, oDirtWall)) {
 	xSpeed = 0;
+}
+if (place_meeting(x, y + ySpeed, oDirtWall)) {
 	ySpeed = 0;
 }
 

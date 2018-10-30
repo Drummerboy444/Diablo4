@@ -38,8 +38,10 @@ if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer
 }
 
 // Collision detection with the Enemy and walls
-if (place_meeting(x + xSpeed, y, oDirtWall) || place_meeting(x, y + ySpeed, oDirtWall)) {
+if (place_meeting(x + xSpeed, y, oDirtWall)) {
 	xSpeed = 0;
+}
+if (place_meeting(x, y + ySpeed, oDirtWall)) {
 	ySpeed = 0;
 }
 
