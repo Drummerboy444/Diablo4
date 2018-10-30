@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "1188d428-4391-4444-9a01-dbd04e85aed0",
+            "Value": {
+                "id": "a95a4697-90a5-4f14-b260-fffff6b6a80f",
+                "resourcePath": "objects\\oDirtWall\\oDirtWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "163e9bd9-cb35-4308-a48a-27d7d0e3ee14",
             "Value": {
                 "id": "6e68a914-ad93-4064-b818-b7d84015623c",
@@ -212,6 +220,14 @@
                 "id": "a65635fa-0c7e-498f-9f02-c4fd0d0ffdfd",
                 "resourcePath": "objects\\oEnemy\\oEnemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a8ffeccc-3a79-41b8-98f3-876e18489c8d",
+            "Value": {
+                "id": "c17229c3-a4c8-48e4-9218-95b4a64bd777",
+                "resourcePath": "sprites\\sDirtWall\\sDirtWall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

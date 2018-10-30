@@ -37,6 +37,12 @@ if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer
 	}
 }
 
+// Collision detection with the Enemy and walls
+if (place_meeting(x + xSpeed, y, oDirtWall) || place_meeting(x, y + ySpeed, oDirtWall)) {
+	xSpeed = 0;
+	ySpeed = 0;
+}
+
 // Snap to initial position
 if(distance_to_point(initial_x, initial_y) < walkSpeed/2 and chasing_player==false){
 	if(!place_meeting(initial_x,initial_y,oPlayer) && !place_meeting(initial_x,initial_y,oEnemy)){

@@ -30,6 +30,12 @@ if (place_meeting(x, y + ySpeed, oEnemy)) {
 	}
 }
 
+// Collision detection with the player and walls xSpeed
+if (place_meeting(x + xSpeed, y, oDirtWall) || place_meeting(x, y + ySpeed, oDirtWall)) {
+	xSpeed = 0;
+	ySpeed = 0;
+}
+
 // Movement
 // Moves the player to the destination if it's close enough
 remaining_dist = point_distance(x,y,oDestination.x,oDestination.y);
