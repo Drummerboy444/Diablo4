@@ -59,3 +59,15 @@ if (xSpeed !=0 or ySpeed !=0){
 	else if (135 < angle && angle <= 225) image_index = 2;
 	else if (225 < angle && angle <= 315) image_index = 3;
 }
+
+
+// Attack player if they're within range and the cooldown is off
+if (currentCooldown <= 0 && distance_to_object(oPlayer) <= attackRange) {
+	with (instance_create_layer(other.x, other.y, "Abilities", oArrow)) {
+		direction = point_direction(x, y, oPlayer.x, oPlayer.y);
+		image_angle = direction;
+		speed = other.attackSpeed;
+	}
+	currentCooldown = attackCooldown;
+}
+currentCooldown = max(0, currentCooldown - 1);
