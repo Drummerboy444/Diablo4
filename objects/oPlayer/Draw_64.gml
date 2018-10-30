@@ -1,9 +1,6 @@
 var health_t_l = [50,50];
 var health_b_r = [200,60];
 
-currentHealth = 50;
-maxHealth = 200;
-
 var healthRight = health_t_l[0] + (health_b_r[0]-health_t_l[0]) * currentHealth/maxHealth;
 
 // Health bar background
