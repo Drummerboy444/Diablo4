@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "4d8ba767-d651-49e0-9343-c3820eea286f",
+            "Value": {
+                "id": "b7f2470c-12b0-4269-a50b-618f28f0fae9",
+                "resourcePath": "sprites\\sFriendlyNpc\\sFriendlyNpc.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f48b4b2-6def-41ae-8df6-6290911a6c3d",
             "Value": {
                 "id": "873a52d8-83a0-41ec-9dd1-5b0cd6621fff",
@@ -251,6 +259,14 @@
             "Value": {
                 "id": "f69d84c8-e02c-47bb-a14a-39d8a5c40de0",
                 "resourcePath": "objects\\oArrow\\oArrow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bd8c1073-a10c-48bf-99dc-6c87b52c9b7a",
+            "Value": {
+                "id": "fa949944-96e7-465f-bf11-1d73a27c2c76",
+                "resourcePath": "objects\\oFriendlyNpc\\oFriendlyNpc.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -86,7 +86,8 @@
         "4cb6ac2b-11bc-4556-8533-243b7038012f",
         "ef034c2f-9449-45db-9806-2ca8b6c5ba43",
         "dde3a7cc-9650-4b15-ae76-64660b1274cd",
-        "dd44d2b5-bc52-4cd7-b617-64d5d8cbdd49"
+        "dd44d2b5-bc52-4cd7-b617-64d5d8cbdd49",
+        "8fe82095-6ab4-4505-b847-9642ce62be49"
     ],
     "IsDnD": false,
     "layers": [
@@ -172,9 +173,35 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "NonPlayerCharacters",
+            "id": "cfcb5e7f-10bf-4ca3-ae93-b7fd15a6098a",
+            "depth": 300,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_6F01ADE6","id": "8fe82095-6ab4-4505-b847-9642ce62be49","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6F01ADE6","objId": "bd8c1073-a10c-48bf-99dc-6c87b52c9b7a","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1152,"y": 704}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Enemies",
             "id": "b687bdde-2b83-4c07-bec5-c6a533b08c6b",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -201,7 +228,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "walls",
             "id": "1f393ee3-9f47-448a-ae16-73c4773e4862",
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -304,7 +331,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 500,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
