@@ -1,6 +1,6 @@
 // Pathfinding mode behaviour
 switch pathMode {
-case 0: //PATROLLING
+case pathModes.patrol:
 	if point_distance(x, y, oPlayer.x, oPlayer.y) <= agroRange {
 		//oPlayer within agro range, change to hunt mode
 		returnPathPosition = path_position;
@@ -14,7 +14,7 @@ case 0: //PATROLLING
 		ySpeed = lengthdir_y(patrolSpeed, angle);
 	}
 	break;
-case 1: // CHASING
+case pathModes.chase:
 	if point_distance(x, y, oPlayer.x, oPlayer.y) < agroRange {
 		angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 		xSpeed = lengthdir_x(walkSpeed, angle);
@@ -67,24 +67,25 @@ case 1: // CHASING
 	else {
 		// Return to Path
 		speed = 0;
-		pathMode = 3; // Do squit unless find a suitable return path
+		pathMode = 3; // Do nothing unless find a suitable return path
 		var returnx;
 		var returny;
 		var pathCheckPositions = [returnPathPosition, 0, 0.2, 0.4, 0.6, 0.8, 1];
-		var returning = false;
+		var shortestDistance = room_height + room_width;
 		for(i=0; i<array_length_1d(pathCheckPositions); i++){
 			var checkPosition = pathCheckPositions[i];
 			returnx = path_get_x(patrol, checkPosition);
 			returny = path_get_y(patrol, checkPosition);
-			if(!collision_line( x, y, returnx, returny, oDirtWall, true, false )){
+			var currentDistance = point_distance(x, y, returnx, returny);
+			if(!collision_line( x, y, returnx, returny, oDirtWall, true, false ) && (currentDistance < shortestDistance)){
+				shortestDistance = currentDistance;
 				returnPathPosition = checkPosition;
 				pathMode = 2;
-				break;
 			}
 		}
 	}
 	break;
-case 2: // RETURNING
+case pathModes.pathReturn:
 	var returnx = path_get_x(patrol, returnPathPosition);
 	var returny = path_get_y(patrol, returnPathPosition);
 	// check if enemy is back at path
@@ -110,12 +111,9 @@ case 2: // RETURNING
 	}
 	break;
 	
-case 3: // SQUIT
+case pathModes.nothing:
 	if point_distance(x, y, oPlayer.x, oPlayer.y) <= agroRange {
 		//oPlayer within agro range, change to hunt mode
-		returnPathPosition = path_position;
-		path_end();
-		speed = 0;
 		pathMode = 1;
 	}
 	break;

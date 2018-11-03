@@ -13,18 +13,17 @@ agroRange = 200;
 xSpeed = 0;
 ySpeed = 0;
 angle = 90;
-chasing_player = false;
 returnPathPosition = -1;
-target = noone;
 
 // Keyword variables
 image_speed = 0;
 image_index = 3;
 
 // Pathfind
-pathMode = 0;
-/* mode values:
-	0 = patrol
-	1 = hunt
-	2 = return to path
-*/
+enum pathModes{
+	patrol,
+	chase,
+	pathReturn,
+	nothing
+}	
+pathMode = pathModes.patrol;
