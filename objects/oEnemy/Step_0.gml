@@ -1,21 +1,20 @@
 // Pathfinding mode behaviour
-switch mode {
-case 0:
-	// check for oPlayer
+switch pathMode {
+case 0: //PATROLLING
 	if point_distance(x, y, oPlayer.x, oPlayer.y) <= agroRange {
 		//oPlayer within agro range, change to hunt mode
 		returnPathPosition = path_position;
 		path_end();
 		speed = 0;
-		mode = 1;
-	} else {
-			angle = point_direction(x, y, xprevious, yprevious);
-			xSpeed = lengthdir_x(patrolSpeed, angle);
-			ySpeed = lengthdir_y(patrolSpeed, angle);
+		pathMode = 1;
+	} 
+	else {
+		angle = point_direction(x, y, xprevious, yprevious);
+		xSpeed = lengthdir_x(patrolSpeed, angle);
+		ySpeed = lengthdir_y(patrolSpeed, angle);
 	}
 	break;
-case 1:
-	// hunt oPlayer
+case 1: // CHASING
 	if point_distance(x, y, oPlayer.x, oPlayer.y) < agroRange {
 		angle = point_direction(x, y, oPlayer.x, oPlayer.y);
 		xSpeed = lengthdir_x(walkSpeed, angle);
@@ -23,27 +22,27 @@ case 1:
 		
 		// Detection of collision during hunt
 		
-		// Collision detection with the player and enemy1
-		if (place_meeting(x + xSpeed, y, oEnemy1) || place_meeting(x + xSpeed, y, oPlayer)) {
+		// Collision detection with the player and other enemies
+		if (place_meeting(x + xSpeed, y, oEnemy) || place_meeting(x + xSpeed, y, oPlayer)) {
 
 			// Set up to account for +ve and -ve xSpeed
 			xIndex = floor(abs(xSpeed));
 			signXSpeed = sign(xSpeed);
 			for (var i = xIndex; i >= 0; i--) {
-				if (!(place_meeting(x + (i * signXSpeed), y, oEnemy1) || place_meeting(x + (i * signXSpeed), y, oPlayer))) {
+				if (!(place_meeting(x + (i * signXSpeed), y, oEnemy) || place_meeting(x + (i * signXSpeed), y, oPlayer))) {
 					xSpeed = i * signXSpeed;
 					break;
 				}
 				xSpeed = 0;
 			}
 		}
-		if (place_meeting(x, y + ySpeed, oEnemy1) || place_meeting(x, y + ySpeed, oPlayer)) {
+		if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer)) {
 
 			// Set up to account for +ve and -ve ySpeed
 			yIndex = floor(abs(ySpeed));
 			signYSpeed = sign(ySpeed);
 			for (var i = yIndex; i >= 0; i--) {
-				if (!(place_meeting(x, y + (i * signYSpeed), oEnemy1) || place_meeting(x, y + (i * signYSpeed), oPlayer))) {
+				if (!(place_meeting(x, y + (i * signYSpeed), oEnemy) || place_meeting(x, y + (i * signYSpeed), oPlayer))) {
 					ySpeed = i * signYSpeed;
 					break;
 				}
@@ -63,25 +62,39 @@ case 1:
 		x += xSpeed;
 		y += ySpeed;
 		
-	// Back to mode 1	
-	} else {
-			// Player lost
-			speed = 0;
-			mode = 2;
+		
+	}
+	else {
+		// Return to Path
+		speed = 0;
+		pathMode = 3; // Do squit unless find a suitable return path
+		var returnx;
+		var returny;
+		var pathCheckPositions = [returnPathPosition, 0, 0.2, 0.4, 0.6, 0.8, 1];
+		var returning = false;
+		for(i=0; i<array_length_1d(pathCheckPositions); i++){
+			var checkPosition = pathCheckPositions[i];
+			returnx = path_get_x(patrol, checkPosition);
+			returny = path_get_y(patrol, checkPosition);
+			if(!collision_line( x, y, returnx, returny, oDirtWall, true, false )){
+				returnPathPosition = checkPosition;
+				pathMode = 2;
+				break;
+			}
+		}
 	}
 	break;
-case 2:
-	// Return to path
-	var returnx = path_get_x(EnemyPatrol2, returnPathPosition);
-	var returny = path_get_y(EnemyPatrol2, returnPathPosition);
+case 2: // RETURNING
+	var returnx = path_get_x(patrol, returnPathPosition);
+	var returny = path_get_y(patrol, returnPathPosition);
 	// check if enemy is back at path
 	if point_distance(x, y, returnx, returny) <= patrolSpeed {
-		path_start(EnemyPatrol2, patrolSpeed, path_action_reverse, true);
+		path_start(patrol, patrolSpeed, path_action_reverse, true);
 		path_position = returnPathPosition;
 		x = returnx;
 		y = returny;
 		speed = 0;
-		mode = 0;
+		pathMode = 0;
 	} else {
 		// need to travel back to path
 		angle = point_direction(x, y, returnx, returny);
@@ -92,8 +105,18 @@ case 2:
 		// keep checking for oPlayer
 		if point_distance(x, y, oPlayer.x, oPlayer.y) <= agroRange {
 			speed = 0;
-			mode = 1;
+			pathMode = 1;
 		}
+	}
+	break;
+	
+case 3: // SQUIT
+	if point_distance(x, y, oPlayer.x, oPlayer.y) <= agroRange {
+		//oPlayer within agro range, change to hunt mode
+		returnPathPosition = path_position;
+		path_end();
+		speed = 0;
+		pathMode = 1;
 	}
 	break;
 }

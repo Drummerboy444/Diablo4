@@ -95,11 +95,27 @@
             }
         },
         {
+            "Key": "2177c81f-4353-4b0a-a29f-8706b36d5ae1",
+            "Value": {
+                "id": "53028d26-e6f2-4d50-9ff7-0591233bc373",
+                "resourcePath": "paths\\EnemyPatrol4\\EnemyPatrol4.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "3184aec2-3b36-4fc1-916b-5f9c8cd02887",
             "Value": {
                 "id": "9042d785-d7b1-415e-9b9f-0b115640dc31",
                 "resourcePath": "objects\\oExplosion\\oExplosion.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "32408c8e-6548-4d52-ab0e-cf6bf6d7b5f4",
+            "Value": {
+                "id": "acf9765e-60b4-4108-af94-d8a0e79da2e9",
+                "resourcePath": "paths\\EnemyPatrol3\\EnemyPatrol3.yy",
+                "resourceType": "GMPath"
             }
         },
         {
@@ -156,14 +172,6 @@
                 "id": "33312316-34ba-4e99-a84c-036f04f80abd",
                 "resourcePath": "sprites\\sBackground_grass_green\\sBackground_grass_green.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "50f885d4-0811-4236-8510-827b7b262ebd",
-            "Value": {
-                "id": "262aaa5e-8cc4-4d72-9526-0af9643212ae",
-                "resourcePath": "objects\\oEnemy2\\oEnemy2.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -242,7 +250,7 @@
             "Key": "a52f0e2a-62cd-4c2e-be21-47ae846be125",
             "Value": {
                 "id": "a65635fa-0c7e-498f-9f02-c4fd0d0ffdfd",
-                "resourcePath": "objects\\oEnemy1\\oEnemy1.yy",
+                "resourcePath": "objects\\oEnemy\\oEnemy.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -364,6 +372,14 @@
                 "id": "a4df394c-4a40-43c7-918c-865576bf7baf",
                 "resourcePath": "sprites\\sBackground_grass_dry\\sBackground_grass_dry.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd233ee3-00de-4cd1-aa78-2631915cecce",
+            "Value": {
+                "id": "3c56e8cc-b1df-4908-b7fa-f9884ca25633",
+                "resourcePath": "objects\\oGameController\\oGameController.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

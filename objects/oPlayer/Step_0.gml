@@ -2,27 +2,27 @@ angle = point_direction(x, y, oDestination.x, oDestination.y);
 xSpeed = lengthdir_x(walkSpeed, angle);
 ySpeed = lengthdir_y(walkSpeed, angle);
 
-// Collision detection with enemy 1 or 2
-if (place_meeting(x + xSpeed, y, oEnemy1) || place_meeting(x + xSpeed, y, oEnemy2)) {
+// Collision detection with enemies
+if (place_meeting(x + xSpeed, y, oEnemy)){
 
 	// Set up to account for +ve and -ve xSpeed
 	xIndex = floor(abs(xSpeed));
 	signXSpeed = sign(xSpeed);
 	for (var i = xIndex; i >= 0; i--) {
-		if (!(place_meeting(x + (i * signXSpeed), y, oEnemy1) || place_meeting(x + (i * signXSpeed), y, oEnemy2))) {
+		if (!place_meeting(x + (i * signXSpeed), y, oEnemy)) {
 			xSpeed = i * signXSpeed;
 			break;
 		}
 		xSpeed = 0;
 	}
 }
-if (place_meeting(x, y + ySpeed, oEnemy1) || place_meeting(x, y + ySpeed, oEnemy2)) {
+if (place_meeting(x, y + ySpeed, oEnemy)){
 
 	// Set up to account for +ve and -ve ySpeed
 	yIndex = floor(abs(ySpeed));
 	signYSpeed = sign(ySpeed);
 	for (var i = yIndex; i >= 0; i--) {
-		if (!(place_meeting(x, y + (i * signYSpeed), oEnemy1) || place_meeting(x, y + (i * signYSpeed), oEnemy2))) {
+		if (!place_meeting(x, y + (i * signYSpeed), oEnemy)) {
 			ySpeed = i * signYSpeed;
 			break;
 		}

@@ -2,7 +2,7 @@ walkSpeed = 8;
 image_speed = 0;
 image_index = 3;
 
-maxHealth = 4;
+maxHealth = 40;
 currentHealth = maxHealth;
 
 max_cooldown_aoe = 120;
