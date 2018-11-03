@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "61fa8172-d21f-415c-9e87-d799b2655246",
+            "Value": {
+                "id": "3795b0ca-bfd4-48e2-ac4f-b497a63d5413",
+                "resourcePath": "objects\\oChatMarker\\oChatMarker.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "75d3b463-dde9-46d7-813c-fa0de8b44ccc",
             "Value": {
                 "id": "ba66a715-d670-49ba-89b4-a669a609f86d",
@@ -204,6 +212,14 @@
                 "id": "67f6450c-d33a-4c8c-8614-05ea0ad0edb8",
                 "resourcePath": "views\\89ff2a55-41e0-4eca-9a08-a764dc4fbbea.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8fcd86bd-79cd-4f5e-a52d-64c239d34d11",
+            "Value": {
+                "id": "6315e748-9f21-4cb8-aed8-3165bbb9b125",
+                "resourcePath": "sprites\\sChatMarker\\sChatMarker.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
