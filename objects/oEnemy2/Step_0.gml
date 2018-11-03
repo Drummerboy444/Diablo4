@@ -9,27 +9,27 @@ else{
 xSpeed = lengthdir_x(walkSpeed, angle);
 ySpeed = lengthdir_y(walkSpeed, angle);
 
-// Collision detection with the player and other enemies
-if (place_meeting(x + xSpeed, y, oEnemy) || place_meeting(x + xSpeed, y, oPlayer)) {
+// Collision detection with the player and enemy1
+if (place_meeting(x + xSpeed, y, oEnemy1) || place_meeting(x + xSpeed, y, oPlayer)) {
 
 	// Set up to account for +ve and -ve xSpeed
 	xIndex = floor(abs(xSpeed));
 	signXSpeed = sign(xSpeed);
 	for (var i = xIndex; i >= 0; i--) {
-		if (!(place_meeting(x + (i * signXSpeed), y, oEnemy) || place_meeting(x + (i * signXSpeed), y, oPlayer))) {
+		if (!(place_meeting(x + (i * signXSpeed), y, oEnemy1) || place_meeting(x + (i * signXSpeed), y, oPlayer))) {
 			xSpeed = i * signXSpeed;
 			break;
 		}
 		xSpeed = 0;
 	}
 }
-if (place_meeting(x, y + ySpeed, oEnemy) || place_meeting(x, y + ySpeed, oPlayer)) {
+if (place_meeting(x, y + ySpeed, oEnemy1) || place_meeting(x, y + ySpeed, oPlayer)) {
 
 	// Set up to account for +ve and -ve ySpeed
 	yIndex = floor(abs(ySpeed));
 	signYSpeed = sign(ySpeed);
 	for (var i = yIndex; i >= 0; i--) {
-		if (!(place_meeting(x, y + (i * signYSpeed), oEnemy) || place_meeting(x, y + (i * signYSpeed), oPlayer))) {
+		if (!(place_meeting(x, y + (i * signYSpeed), oEnemy1) || place_meeting(x, y + (i * signYSpeed), oPlayer))) {
 			ySpeed = i * signYSpeed;
 			break;
 		}
@@ -47,7 +47,7 @@ if (place_meeting(x, y + ySpeed, oDirtWall)) {
 
 // Snap to initial position
 if(distance_to_point(initial_x, initial_y) < walkSpeed/2 and chasing_player==false){
-	if(!place_meeting(initial_x,initial_y,oPlayer) && !place_meeting(initial_x,initial_y,oEnemy)){
+	if(!place_meeting(initial_x,initial_y,oPlayer) && !place_meeting(initial_x,initial_y,oEnemy2)){
 		x = initial_x;
 		y = initial_y;
 	}

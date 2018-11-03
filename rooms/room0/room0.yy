@@ -9,7 +9,6 @@
     "instanceCreationOrderIDs": [
         "b25d4135-dad9-46cd-b61e-1bafa83dd529",
         "112844d6-79f2-438a-a5a5-4e3e83afa6e2",
-        "098f3483-1d68-4403-8559-f0f47c3b9547",
         "dfeb1e5f-be89-4946-a8ef-c5d86f0f7083",
         "7fe6bfe4-7f4e-49f7-93d4-2232d79a5330",
         "e9a876ce-12ee-4a91-a7df-348ce353d65c",
@@ -86,15 +85,66 @@
         "4cb6ac2b-11bc-4556-8533-243b7038012f",
         "ef034c2f-9449-45db-9806-2ca8b6c5ba43",
         "dde3a7cc-9650-4b15-ae76-64660b1274cd",
-        "dd44d2b5-bc52-4cd7-b617-64d5d8cbdd49"
+        "dd44d2b5-bc52-4cd7-b617-64d5d8cbdd49",
+        "7a17245c-fdfa-472b-bd26-3b948ce8b998"
     ],
     "IsDnD": false,
     "layers": [
         {
+            "__type": "GMRPathLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "EnemyPatrol2",
+            "id": "57dfcbff-40b3-41a4-8664-cfa533ddb4b9",
+            "colour": { "Value": 4294901760 },
+            "depth": 0,
+            "grid_x": 16,
+            "grid_y": 16,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRPathLayer",
+            "pathId": "b005ef5e-6e0b-4f58-8871-a1dff56d2ac6",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRPathLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "EnemyPatrol1",
+            "id": "bbe230db-ac0a-4542-9ac3-74f0221e6abd",
+            "colour": { "Value": 4278190335 },
+            "depth": 100,
+            "grid_x": 16,
+            "grid_y": 16,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRPathLayer",
+            "pathId": "4277f211-dd00-48a6-ab49-d075bb8744c6",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "marker",
             "id": "114a58bd-bc3f-424d-8002-4b88ce68bf2d",
-            "depth": 0,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -120,7 +170,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Player",
             "id": "d12cf30c-cba9-4cb3-801b-76b2af3a370d",
-            "depth": 100,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -148,7 +198,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Abilities",
             "id": "4d6b0e2b-5897-497e-8dcd-0e93250af958",
-            "depth": 200,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -174,7 +224,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Enemies",
             "id": "b687bdde-2b83-4c07-bec5-c6a533b08c6b",
-            "depth": 300,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -185,7 +235,7 @@
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_5A30A3DB","id": "dfeb1e5f-be89-4946-a8ef-c5d86f0f7083","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_5A30A3DB","objId": "a52f0e2a-62cd-4c2e-be21-47ae846be125","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1536,"y": 288},
-{"name": "inst_57AF7895","id": "098f3483-1d68-4403-8559-f0f47c3b9547","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_57AF7895","objId": "a52f0e2a-62cd-4c2e-be21-47ae846be125","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 512,"y": 864}
+{"name": "inst_34A86C25","id": "7a17245c-fdfa-472b-bd26-3b948ce8b998","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_34A86C25","objId": "50f885d4-0811-4236-8510-827b7b262ebd","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 576,"y": 864}
             ],
             "layers": [
 
@@ -201,7 +251,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "walls",
             "id": "1f393ee3-9f47-448a-ae16-73c4773e4862",
-            "depth": 400,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -304,7 +354,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 500,
+            "depth": 700,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

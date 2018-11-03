@@ -14,3 +14,6 @@ attackCooldown = 40;
 currentCooldown = attackCooldown;
 attackSpeed = 7;
 attackRange = 400;
+
+// Pathfind
+path_start(EnemyPatrol2, walkSpeed/2, path_action_reverse, true);
