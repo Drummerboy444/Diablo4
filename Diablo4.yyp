@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "b843e819-b21c-44ef-9e19-bb4534eead9b",
+            "Value": {
+                "id": "c05d4653-c5f3-4e53-807c-7d87f9165661",
+                "resourcePath": "sprites\\sFireballIcon\\sFireballIcon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ba5cb6a8-a170-4830-b6be-3d2597bd01f6",
             "Value": {
                 "id": "7646cac7-f82a-4420-a865-22bedd726e83",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "d485e4d4-2a24-40bc-9162-dfe01e886ac6",
+            "Value": {
+                "id": "365068d4-b527-48d8-a883-33a7359daa90",
+                "resourcePath": "views\\d485e4d4-2a24-40bc-9162-dfe01e886ac6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dfea432a-ccac-4a03-93db-fbf6d360c180",
             "Value": {
                 "id": "199f4cbd-f01a-45a9-bf5c-ac913d98cdd4",
@@ -340,6 +356,14 @@
                 "id": "317dc168-5586-4e9e-adec-c785d55832e9",
                 "resourcePath": "views\\e7b5bd90-00bb-46f8-979c-ecb9044564bb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f29b5a2d-303e-44cb-a65a-11b9a583c543",
+            "Value": {
+                "id": "3b36f55d-a8d8-40e8-81a2-a9c18cda5b1b",
+                "resourcePath": "sprites\\sAoeIcon\\sAoeIcon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
